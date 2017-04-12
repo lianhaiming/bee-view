@@ -54,5 +54,8 @@ module.exports = {
              hash: true
         })
         
-    ]
+    ],
+    externals: {
+        "axios": "axios"
+    },
 }
