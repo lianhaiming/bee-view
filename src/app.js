@@ -2,12 +2,14 @@
 
 import ReactDOM from 'react-dom'
 import React from 'react'
+import {getData} from './lib/ajax'
 import {
     BrowserRouter as Router,
     Route,
     Link
 } from 'react-router-dom'
 
+getData({}, 'https://api.leancloud.cn/1.1/cloudQuery?cql=select * from honey limit 0,20 order by pubUser');
 import HeaderExample from './components/header.js'
 
 ReactDOM.render(
