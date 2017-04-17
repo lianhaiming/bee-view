@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/**
+ * @desc common scss
+ * @author geeksans
+ * @date 2017-04-17
+ */
+
+$beeColorBg: rgba(0,0,0,.88);
+$beeColorFont: #F6A623;
+
+html {
+    font-size: 13.33333333rem;
+}
+
+body {
+    max-width: 980px;
+}

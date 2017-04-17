@@ -9,8 +9,9 @@ import {
     Link
 } from 'react-router-dom'
 
+console.log(typeof React.Component)
 getData({}, 'https://api.leancloud.cn/1.1/cloudQuery?cql=select * from honey limit 0,20 order by pubUser');
-import HeaderExample from './components/header.js'
+import HeaderExample from './components/header/header.js'
 
 ReactDOM.render(
         <Router>
