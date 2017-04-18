@@ -9,7 +9,7 @@
     "redux-devtools-extension": "^2.13.0"
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --port 2233"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
