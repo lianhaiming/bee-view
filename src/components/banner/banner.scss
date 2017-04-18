@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import '../../lib/common.scss';
+@import '../../lib/normalize.css';
+.banner{
+	width: 100%;
+	height: .88rem;
+	line-height: .88rem;
+	padding:0 .18rem;
+	box-sizing: border-box;
+	background: #000;
+	.logo{
+		img{
+			width: .58rem;
+		    height: .49rem;
+		    float: left;
+		    margin-top: .195rem;
+		    border-radius: 50%;
+		}
+	}
+	.title{
+		font-size: .34rem;
+	    color: $beeColorFont;
+	    margin: 0 .5rem;
+	    position: relative;
+	    float: left;
+		i {
+		    font-size: .24rem;
+		    position: absolute;
+		    bottom: .15rem;
+		}
+	}
+	.siderbar-icon{
+		display: block;
+		float: left;
+	    font-size: .24rem;
+	    border-top: 3px solid $beeColorFont;
+	    border-bottom: 3px solid $beeColorFont;
+	    height: 0.27rem;
+	    line-height: .27rem;
+	    margin-top: .23rem;
+	    color:$beeColorFont;
+	    position: relative;
+	    i.bee{
+	    	width: .2rem;
+	    	height: .2rem;
+	    	position: absolute;
+	    	top: -.16rem;
+		    left: -.13rem;
+		    background: url(/assets/bee.png) no-repeat center;
+	    }
+	}
+}

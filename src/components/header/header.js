@@ -4,7 +4,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import test from '../../../pubilc/300.png';
+import test from '../../assets/300.png';
 class HeaderExample extends Component {
     render() {
         const {title} = this.props;
