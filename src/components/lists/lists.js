@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './lists.scss'
-
+import { bRandom } from '../../lib/util'
 class ListsItem extends Component {
     render() {
         let lists = this.props.listsItem || [];
@@ -16,7 +16,7 @@ class ListsItem extends Component {
                             <div className="item_r_notice">
                                 <span>{item.author || '小蜜蜂'}</span>
                                 <span>{item.date || '2017-04-10'}</span>
-                                <span>阅读{item.wTime ||(300 +  Math.round(Math.random())*33)}次</span>
+                                <span>阅读{ item.wTime || bRandom(300, 333) }次</span>
                             </div>
                         </div>
                     </div>

@@ -13,7 +13,7 @@
 }
 .lists {
     padding: 0 .18rem;
-    .lists_item {
+    &_item {
         padding: .1rem 0;
         border-bottom: .001rem solid #9B9B9B;
         background: $beeColorBg;
@@ -28,15 +28,15 @@
             
             float: right;
             width: 2.55rem;
-            .item_r_title {
+            &_title {
                 @include fontStyle(.2rem, #000);
                 @extend %textEllipsis;
             }
-            .item_r_content {
+            &_content {
                 @include fontStyle(.14rem, #454545);
                 @extend %textEllipsis;
             }
-            .item_r_notice {
+            &_notice {
                 span {
                     @include fontStyle(.12rem, #F6A623);
                 }
