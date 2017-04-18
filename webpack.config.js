@@ -51,7 +51,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: '情报特工',
             filename: '../index.html',
-             hash: true
+            template: 'index.html',
+            hash: true
         })
         
     ],
