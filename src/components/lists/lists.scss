@@ -1,7 +1,52 @@
 @import '../../lib/common.scss';
 @import '../../lib/normalize.css';
 
-.lists_item {
-    height: .93rem;
-    background: $beeColorBg;
+
+@mixin fontStyle($size: .16rem, $color: #000) {
+    font-size: $size;
+    color: $color;
+}
+%textEllipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.lists {
+    padding: 0 .18rem;
+    .lists_item {
+        padding: .1rem 0;
+        border-bottom: .001rem solid #9B9B9B;
+        background: $beeColorBg;
+        overflow: hidden;
+         .item_img {
+            float: left;
+            width: .65rem;
+            height: .65rem;
+            border: .001rem solid #F6A623;
+        }
+        .item_r {
+            
+            float: right;
+            width: 2.55rem;
+            .item_r_title {
+                @include fontStyle(.2rem, #000);
+                @extend %textEllipsis;
+            }
+            .item_r_content {
+                @include fontStyle(.14rem, #454545);
+                @extend %textEllipsis;
+            }
+            .item_r_notice {
+                span {
+                    @include fontStyle(.12rem, #F6A623);
+                }
+                span:nth-child(2) {
+                    margin: 0 .05rem;
+                    padding: 0 .05rem;
+                    border-left: .001rem solid #979797;
+                    border-right: .001rem solid #979797;
+                }
+            }
+        }
+    }
 }

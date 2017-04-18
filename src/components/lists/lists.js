@@ -3,20 +3,24 @@ import './lists.scss'
 
 class ListsItem extends Component {
     render() {
+        let lists = this.props.listsItem || [];
+        console.log(lists)
         return (
-            <section>
-                <div className="lists_item">
-                    <img src="" alt="" className="lists_item_img" />
-                    <div>
-                        <h1 className="lists_item_title">this is a title</h1>
-                        <p className="lists_item_content">Lorem ipsumz dolor sit amet, coantium, velit at tenetur, recusandae animi, illum.</p>
-                        <div className="lists_item_notice">
-                            <span>author</span>
-                            <span>2017-04-17</span>
-                            <span>阅读450次</span>
+            <section className="lists">{
+                lists.map((item) =>
+                    <div className="lists_item" key={item.key}>
+                        <img src="../../assets/logo.jpg" alt="item1" className="item_img" />
+                        <div className="item_r">
+                            <h1 className="item_r_title">{ item.title }</h1>
+                            <p className="item_r_content">{ item.content }</p>
+                            <div className="item_r_notice">
+                                <span>{item.author || '小蜜蜂'}</span>
+                                <span>{item.date || '2017-04-10'}</span>
+                                <span>阅读{item.wTime ||(300 +  Math.round(Math.random())*33)}次</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                )}
             </section>
         )
     }
