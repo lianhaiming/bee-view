@@ -29,7 +29,7 @@
             float: right;
             width: 2.55rem;
             &_title {
-                @include fontStyle(.2rem, #000);
+                @include fontStyle(.15rem, #333);
                 @extend %textEllipsis;
             }
             &_content {

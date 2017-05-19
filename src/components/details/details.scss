@@ -7,6 +7,8 @@
 }
 .news_wrap {
     .news_title {
+        margin-top: .15rem;
+        margin-bottom: .1rem;
         font: bold 0.24rem/0.33rem "PingFangSC-Semibold";
         color: #000;
     }
@@ -20,16 +22,22 @@
     }
     .news_img_wrap {
         margin: 0.105rem 0;
-        width: 3.4rem;
-        height: 2.24rem;
+        
         img {
-            width: 100%;
+            width: 3.4rem;
+            height: 2.24rem;
         }
     }
     .news_cont {
+        font-size: .15rem;
+        width: 100%;
+        overflow: hidden;
         text-indent: 1em;
         font: 0.18rem/0.25rem "PingFangSC-Regular";
         color: #4A4A4A;
+        img {
+            width: 100%;
+        }
     }
 }
 hr {

@@ -36,7 +36,7 @@ module.exports = {
                     loader: 'file-loader',
                     query: {
                         limit: 10000,
-                        name: `[name].[ext]?[hash:4]`
+                        name: `/[name].[ext]?[hash:4]`
                     }
                 }]
             }, {
