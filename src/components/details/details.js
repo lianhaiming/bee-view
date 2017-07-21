@@ -12,7 +12,7 @@ class NewsDetail extends Component {
         var search = window.location.search;
         axios({
             method: 'GET',
-            url: 'http://api.clramw.top:20200/api/detail',
+            url: 'http://api.clramw.top:8080/api/detail',
             params: {
                 objectId: search.split('=')[1]
             }

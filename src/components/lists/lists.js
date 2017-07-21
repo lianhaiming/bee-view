@@ -15,7 +15,7 @@ class ListsItem extends Component {
     componentWillMount() {
         axios({
             method: 'GET',
-            url: 'http://api.clramw.top:20200/api/lists'
+            url: 'http://api.clramw.top:8080/api/lists'
         })
         .then((data)=> {
             // console.log(data);
